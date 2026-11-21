@@ -1,0 +1,498 @@
+/* ==========================================================================
+   FIX-PLUG Component Stylesheet (iOS Smooth & Ultra-Fast Edition)
+   Buttons, Cards, Forms, Badges, Accordions, WhatsApp Floating Trigger
+   ========================================================================== */
+
+/* Buttons with iOS haptic active physics */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  min-height: var(--min-tap);
+  padding: 0.7rem 1.45rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.12s var(--ios-spring), background-color 0.15s ease, box-shadow 0.15s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Primary Copper Button - STRICT CONTRAST RULE: Near-black text on Copper */
+.btn-copper {
+  background-color: var(--color-copper);
+  color: var(--color-near-black);
+  border-color: var(--color-copper);
+  box-shadow: 0 2px 8px rgba(182, 133, 90, 0.25);
+}
+
+.btn-copper:hover {
+  background-color: var(--color-copper-hover);
+  border-color: var(--color-copper-hover);
+  color: var(--color-near-black);
+}
+
+.btn-copper:active {
+  background-color: var(--color-copper-hover);
+  box-shadow: 0 1px 3px rgba(182, 133, 90, 0.2);
+}
+
+.btn-dark {
+  background-color: var(--color-near-black);
+  color: var(--color-cream);
+  border-color: var(--color-near-black);
+  box-shadow: 0 2px 8px rgba(10, 10, 10, 0.2);
+}
+
+.btn-dark:hover {
+  background-color: #222222;
+  color: var(--color-cream);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-near-black);
+  border-color: var(--color-near-black);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-near-black);
+  color: var(--color-cream);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #0A0A0A;
+  border-color: #20BD5A;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1EBE5D;
+  color: #0A0A0A;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+@media (min-width: 480px) {
+  .btn-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/* Badges & Notice Banners */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-copper {
+  background-color: var(--color-copper-light);
+  color: var(--color-near-black);
+  border: 1px solid var(--color-copper);
+}
+
+.badge-dark {
+  background-color: var(--color-near-black);
+  color: var(--color-cream);
+}
+
+.badge-slate {
+  background-color: var(--color-slate-light);
+  color: var(--color-near-black);
+  border: 1px solid var(--color-slate);
+}
+
+.banner-notice {
+  background-color: #FFFDF9;
+  border: 1px solid var(--color-copper);
+  border-left: 5px solid var(--color-copper);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.banner-notice strong {
+  color: var(--color-near-black);
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+@media (min-width: 640px) {
+  .card-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .card-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background-color: var(--color-white);
+  border: 1px solid rgba(129, 146, 162, 0.28);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s var(--ios-ease), box-shadow 0.2s var(--ios-ease);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-near-black);
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: rgba(182, 133, 90, 0.15);
+  color: var(--color-near-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Step Card (1, 2, 3, 4) */
+.step-card {
+  position: relative;
+  background-color: var(--color-white);
+  border: 1px solid rgba(129, 146, 162, 0.28);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s var(--ios-ease);
+}
+
+.step-card:hover {
+  transform: translateY(-2px);
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-copper);
+  color: var(--color-near-black);
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Forms with iOS-Native styling */
+.form-container {
+  background-color: var(--color-white);
+  border: 1px solid rgba(129, 146, 162, 0.3);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 600px) {
+  .form-container {
+    padding: var(--spacing-2xl);
+  }
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 520px) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-near-black);
+  margin-bottom: 0.35rem;
+}
+
+label .required {
+  color: var(--color-error);
+  margin-left: 0.2rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  min-height: var(--min-tap);
+  padding: 0.75rem 0.9rem;
+  font-family: var(--font-family);
+  font-size: 16px; /* Explicit 16px prevents iOS Safari auto-zoom */
+  color: var(--color-near-black);
+  background-color: #FBFBFB;
+  border: 1.5px solid rgba(129, 146, 162, 0.45);
+  border-radius: var(--radius-md);
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+select {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0A0A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-near-black);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(182, 133, 90, 0.3);
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-helper {
+  font-size: 0.825rem;
+  color: #555555;
+  margin-top: 0.3rem;
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  accent-color: var(--color-near-black);
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.checkbox-group label {
+  font-weight: 400;
+  font-size: 0.885rem;
+  line-height: 1.45;
+  color: var(--color-near-black);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+/* Anti-spam honeypot */
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Feedback Box */
+.form-feedback {
+  display: none;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin-top: var(--spacing-lg);
+  animation: fadeIn 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-feedback.success {
+  display: block;
+  background-color: #F0FDF4;
+  border: 2px solid var(--color-success);
+  color: #14532D;
+}
+
+.form-feedback.error {
+  display: block;
+  background-color: #FEF2F2;
+  border: 2px solid var(--color-error);
+  color: #7F1D1D;
+}
+
+/* Accordion with iOS physics */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.faq-item {
+  background-color: var(--color-white);
+  border: 1px solid rgba(129, 146, 162, 0.3);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.faq-question {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  min-height: var(--min-tap);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  background: transparent;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-near-black);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.12s ease;
+}
+
+.faq-question:active {
+  background-color: rgba(182, 133, 90, 0.1);
+}
+
+.faq-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  transition: transform 0.25s var(--ios-spring);
+  color: var(--color-near-black);
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 var(--spacing-lg) var(--spacing-md);
+  color: #222222;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  border-top: 1px dashed rgba(129, 146, 162, 0.25);
+  padding-top: var(--spacing-sm);
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+  animation: slideDown 0.2s ease forwards;
+}
+
+/* Floating WhatsApp Quick Action Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background-color: #25D366;
+  color: #0A0A0A;
+  box-shadow: 0 4px 16px rgba(10, 10, 10, 0.25);
+  text-decoration: none;
+  transition: transform 0.15s var(--ios-spring), box-shadow 0.15s ease;
+  border: 2px solid #FFFFFF;
+}
+
+.whatsapp-float:active {
+  transform: scale(0.92);
+}
+
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.whatsapp-pulse-dot {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color-copper);
+  border: 2px solid #FFFFFF;
+}

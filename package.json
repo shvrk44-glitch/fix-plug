@@ -1,0 +1,22 @@
+{
+  "name": "fix-plug-web",
+  "version": "1.0.0",
+  "description": "FIX-PLUG Phase 1 Launch Website - Verified Tradespeople in Kano",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "fix-plug",
+    "kano",
+    "nigeria",
+    "tradespeople",
+    "plumbing",
+    "electrical",
+    "artisans"
+  ],
+  "author": "FIX-PLUG Team",
+  "license": "UNLICENSED"
+}
