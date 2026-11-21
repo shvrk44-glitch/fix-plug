@@ -6,7 +6,7 @@
 const FIX_PLUG_I18N = {
   en: {
     tagline: "Verified tradespeople. Simple booking. Fair pay.",
-    subtagline: "Verified plumbers, electricians, and handymen in Kano. No guesswork, no overpriced quotes, no vanished artisans.",
+    subtagline: "Verified plumbers, electricians, handymen, and home cleaners in Kano. No guesswork, no overpriced quotes, no vanished artisans.",
     btn_request: "Request a tradesperson",
     btn_join: "Join as an artisan",
     btn_whatsapp: "Message on WhatsApp",
@@ -28,7 +28,7 @@ const FIX_PLUG_I18N = {
   },
   ha: {
     tagline: "Kwararrun ma'aikatan hannu da aka tantance. Saukin nema. Halaltaccen biya.",
-    subtagline: "Kwararrun magina, masu aikin famfo, wutar lantarki, da gyare-gyaren gida a Kano. Ba zamba, ba tsadar karya, ba guduwa ba tare da an gama aiki ba.",
+    subtagline: "Kwararrun masu aikin famfo, wutar lantarki, gyare-gyaren gida da masu aikin shara da goge-goge a Kano. Ba zamba, ba tsadar karya, ba guduwa ba tare da an gama aiki ba.",
     btn_request: "Nemi ma'aikaci yanzu",
     btn_join: "Shiga a matsayin mai sana'a",
     btn_whatsapp: "Tuntube mu a WhatsApp",
