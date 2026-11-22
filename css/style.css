@@ -188,6 +188,7 @@ a:hover {
 .brand-link {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   text-decoration: none;
   min-height: var(--min-tap);
   transition: transform 0.12s ease;
@@ -197,8 +198,17 @@ a:hover {
   transform: scale(0.96);
 }
 
+.brand-emblem-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: block;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(10, 10, 10, 0.15);
+}
+
 .brand-logo-img {
-  height: 38px;
+  height: 36px;
   width: auto;
   display: block;
 }
