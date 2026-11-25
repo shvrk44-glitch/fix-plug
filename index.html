@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+`
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>FIX-PLUG | Verified Tradespeople in Kano. Simple Booking. Fair Pay.</title>
-  <meta name="description" content="Verified plumbers, electricians, and handymen in Kano. We vet trade skills in person, check guarantors, and ensure fair, transparent pricing. Launching soon in Kano.">
+  <meta name="description"
+    content="Verified plumbers, electricians, and handymen in Kano. We vet trade skills in person, check guarantors, and ensure fair, transparent pricing. Launching soon in Kano.">
   <link rel="canonical" href="https://fixplug.ng/">
-  
-  <!-- Favicon -->
+
+  <!-- Favicon & iOS App Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/FIX-PLUG_logo_badge.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FIX-PLUG">
+  <meta name="theme-color" content="#F3EBE0">
+
   <!-- Open Graph / WhatsApp / Social Share -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="FIX-PLUG | Verified Tradespeople in Kano">
-  <meta property="og:description" content="Verified plumbers, electricians, and handymen in Kano. Simple booking. Fair pay. Launching soon.">
+  <meta property="og:description"
+    content="Verified plumbers, electricians, and handymen in Kano. Simple booking. Fair pay. Launching soon.">
   <meta property="og:image" content="https://fixplug.ng/assets/og-image.svg">
   <meta property="og:url" content="https://fixplug.ng/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FIX-PLUG | Verified Tradespeople in Kano">
-  <meta name="twitter:description" content="Verified plumbers, electricians, and handymen in Kano. Simple booking. Fair pay.">
+  <meta name="twitter:description"
+    content="Verified plumbers, electricians, and handymen in Kano. Simple booking. Fair pay.">
   <meta name="twitter:image" content="https://fixplug.ng/assets/og-image.svg">
 
   <!-- High-Performance Non-Blocking Font Loading (Instant First Paint) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    media="print" onload="this.media='all'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
   </noscript>
 
   <!-- Core CSS -->
@@ -64,6 +77,7 @@
   }
   </script>
 </head>
+
 <body>
 
   <!-- Sticky Header -->
@@ -73,7 +87,7 @@
         <!-- Logo -->
         <a href="index.html" class="brand-link" aria-label="FIX-PLUG Homepage">
           <img src="assets/FIX-PLUG_brand_emblem.png" alt="" class="brand-emblem-badge" width="40" height="40">
-          <img src="assets/FIX-PLUG_logo_horizontal.png" alt="FIX-PLUG" class="brand-logo-img" width="210" height="60">
+          <img src="assets/FIX-PLUG_logo_new.png" alt="FIX-PLUG" class="brand-logo-img">
         </a>
 
         <!-- Desktop Navigation -->
@@ -87,13 +101,19 @@
           </ul>
         </nav>
 
-        <!-- Header Actions: Lang switch & Mobile Hamburger -->
+        <!-- Header Actions: iOS 3-Lang Switcher & CTA -->
         <div class="header-actions">
-          <button id="langToggle" class="lang-toggle" aria-label="Switch Language">HAUSA</button>
-          <a href="customers/index.html#request" class="btn btn-copper nav-desktop" style="padding: 0.45rem 1rem; font-size: 0.9rem;">
+          <div class="ios-segmented-control lang-selector nav-desktop" role="group" aria-label="Select Language">
+            <button type="button" class="segment-btn active" data-lang="en">EN</button>
+            <button type="button" class="segment-btn" data-lang="ha">HA</button>
+            <button type="button" class="segment-btn" data-lang="pi">PI</button>
+          </div>
+          <a href="customers/index.html#request" class="btn btn-copper nav-desktop"
+            style="padding: 0.45rem 1rem; font-size: 0.9rem;">
             Request a Pro
           </a>
-          <button id="mobileMenuBtn" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <button id="mobileMenuBtn" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="mobileDrawer">
             <span></span>
             <span></span>
             <span></span>
@@ -104,6 +124,11 @@
 
     <!-- Mobile Drawer Navigation -->
     <div id="mobileDrawer" class="mobile-drawer" role="navigation" aria-label="Mobile menu">
+      <div class="ios-segmented-control mobile-lang-selector" role="group" aria-label="Select Language">
+        <button type="button" class="segment-btn active" data-lang="en">English</button>
+        <button type="button" class="segment-btn" data-lang="ha">Hausa</button>
+        <button type="button" class="segment-btn" data-lang="pi">Pidgin</button>
+      </div>
       <ul class="mobile-nav-list">
         <li><a href="customers/index.html" class="mobile-nav-link">For Customers</a></li>
         <li><a href="artisans/index.html" class="mobile-nav-link">For Artisans</a></li>
@@ -115,7 +140,10 @@
         <a href="customers/index.html#request" class="btn btn-copper btn-block">Request a tradesperson</a>
         <a href="artisans/index.html#join" class="btn btn-outline btn-block">Join as an artisan</a>
         <a href="#" data-wa-type="customer" class="btn btn-whatsapp btn-block">
-          <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24">
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+          </svg>
           Chat on WhatsApp
         </a>
       </div>
@@ -135,15 +163,18 @@
               <span class="badge badge-copper" data-i18n="badge_kano">LAUNCHING IN KANO</span>
             </div>
           </div>
-          
+
           <h1 data-i18n="tagline">Verified tradespeople. Simple booking. Fair pay.</h1>
-          
-          <p class="lead" data-i18n="subtagline" style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-xl);">
-            Verified plumbers, electricians, and handymen in Kano. No guesswork, no overpriced quotes, no vanished artisans.
+
+          <p class="lead" data-i18n="subtagline"
+            style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+            Verified plumbers, electricians, and handymen in Kano. No guesswork, no overpriced quotes, no vanished
+            artisans.
           </p>
 
           <div class="banner-notice text-center" style="max-width: 680px; margin-left: auto; margin-right: auto;">
-            <strong>Notice:</strong> FIX-PLUG is currently onboarding verified tradespeople and taking customer priority bookings in Kano. All requests join our early-access list.
+            <strong>Notice:</strong> FIX-PLUG is currently onboarding verified tradespeople and taking customer priority
+            bookings in Kano. All requests join our early-access list.
           </div>
 
           <div class="btn-group" style="justify-content: center;">
@@ -154,7 +185,10 @@
               Join as an artisan
             </a>
             <a href="#" data-wa-type="customer" class="btn btn-whatsapp" data-i18n="btn_whatsapp">
-              <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+              </svg>
               Chat on WhatsApp
             </a>
           </div>
@@ -174,39 +208,56 @@
           <div class="card">
             <div class="card-icon">
               <!-- Shield Check SVG -->
-              <svg style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              <svg style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2;"
+                viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
             </div>
             <h3 data-i18n="promise_1_title">100% Verified in Person</h3>
             <p data-i18n="promise_1_desc">
-              We check government ID, practical skill tests, and home guarantors before any artisan gets a job. No unvetted workers.
+              We check government ID, practical skill tests, and home guarantors before any artisan gets a job. No
+              unvetted workers.
             </p>
             <p style="margin-top: auto; margin-bottom: 0;">
-              <a href="trust/index.html" style="font-weight: 700; font-size: 0.9rem;">Read our vetting standard &rarr;</a>
+              <a href="trust/index.html" style="font-weight: 700; font-size: 0.9rem;">Read our vetting standard
+                &rarr;</a>
             </p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <!-- Scale/Balance SVG -->
-              <svg style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM7 21h10M12 3v18M3 7h18"/></svg>
+              <svg style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2;"
+                viewBox="0 0 24 24">
+                <path
+                  d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM7 21h10M12 3v18M3 7h18" />
+              </svg>
             </div>
             <h3 data-i18n="promise_2_title">Transparent &amp; Fair</h3>
             <p data-i18n="promise_2_desc">
-              Clear job estimates upfront. Fair pay for the artisan, honest value for the customer. Zero hidden charges or surprise markups.
+              Clear job estimates upfront. Fair pay for the artisan, honest value for the customer. Zero hidden charges
+              or surprise markups.
             </p>
             <p style="margin-top: auto; margin-bottom: 0;">
-              <a href="customers/index.html#faq" style="font-weight: 700; font-size: 0.9rem;">How pricing works &rarr;</a>
+              <a href="customers/index.html#faq" style="font-weight: 700; font-size: 0.9rem;">How pricing works
+                &rarr;</a>
             </p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <!-- Map Pin Clock SVG -->
-              <svg style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2;"
+                viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
             </div>
             <h3 data-i18n="promise_3_title">Reliable &amp; Local</h3>
             <p data-i18n="promise_3_desc">
-              Tradespeople based across Kano—Nassarawa, Fagge, Tarauni, Dala, and beyond. They turn up when promised and finish the job.
+              Tradespeople based across Kano—Nassarawa, Fagge, Tarauni, Dala, and beyond. They turn up when promised and
+              finish the job.
             </p>
             <p style="margin-top: auto; margin-bottom: 0;">
               <a href="customers/index.html" style="font-weight: 700; font-size: 0.9rem;">See covered areas &rarr;</a>
@@ -279,28 +330,32 @@
             <h3 style="display: flex; align-items: center; gap: 8px;">
               <span>🔧</span> Plumbing Services
             </h3>
-            <p>Pipe leaks, borehole pump connections, overhead tank installations, toilet and kitchen repairs, drainage blocks.</p>
+            <p>Pipe leaks, borehole pump connections, overhead tank installations, toilet and kitchen repairs, drainage
+              blocks.</p>
           </div>
 
           <div class="card">
             <h3 style="display: flex; align-items: center; gap: 8px;">
               <span>⚡</span> Electrical Work
             </h3>
-            <p>Inverter and solar wiring, socket replacements, generator changeover switches, fault tracing, distribution board setups.</p>
+            <p>Inverter and solar wiring, socket replacements, generator changeover switches, fault tracing,
+              distribution board setups.</p>
           </div>
 
           <div class="card">
             <h3 style="display: flex; align-items: center; gap: 8px;">
               <span>🔨</span> Repairs &amp; Handyman
             </h3>
-            <p>Door locks and hinges, wardrobe repairs, roof and ceiling patches, masonry touch-ups, mounting appliances and TVs.</p>
+            <p>Door locks and hinges, wardrobe repairs, roof and ceiling patches, masonry touch-ups, mounting appliances
+              and TVs.</p>
           </div>
 
           <div class="card">
             <h3 style="display: flex; align-items: center; gap: 8px;">
               <span>🧹</span> House &amp; Deep Cleaning
             </h3>
-            <p>Residential deep cleaning, post-construction scrubbing, kitchen and tile degreasing, move-in/move-out compound care.</p>
+            <p>Residential deep cleaning, post-construction scrubbing, kitchen and tile degreasing, move-in/move-out
+              compound care.</p>
           </div>
         </div>
       </div>
@@ -312,9 +367,11 @@
         <div class="card-grid card-grid-2">
           <!-- Customer Box -->
           <div class="card" style="border-top: 5px solid var(--color-copper);">
-            <span class="badge badge-copper" style="align-self: flex-start; margin-bottom: var(--spacing-sm);">FOR HOUSEHOLDS &amp; OFFICES</span>
+            <span class="badge badge-copper" style="align-self: flex-start; margin-bottom: var(--spacing-sm);">FOR
+              HOUSEHOLDS &amp; OFFICES</span>
             <h2>Need repairs in Kano?</h2>
-            <p>Get a tradesperson who shows up on time, quotes honestly, and has passed our multi-point background and skills check.</p>
+            <p>Get a tradesperson who shows up on time, quotes honestly, and has passed our multi-point background and
+              skills check.</p>
             <ul style="margin-left: 1.25rem; margin-bottom: var(--spacing-lg); line-height: 1.6;">
               <li>Plumbing, electrical &amp; carpentry</li>
               <li>Verified identity &amp; skills check</li>
@@ -327,9 +384,11 @@
 
           <!-- Artisan Box -->
           <div class="card" style="border-top: 5px solid var(--color-near-black);">
-            <span class="badge badge-dark" style="align-self: flex-start; margin-bottom: var(--spacing-sm);">FOR SKILLED ARTISANS</span>
+            <span class="badge badge-dark" style="align-self: flex-start; margin-bottom: var(--spacing-sm);">FOR SKILLED
+              ARTISANS</span>
             <h2>Are you a skilled tradesperson?</h2>
-            <p>Join FIX-PLUG. Get steady customer jobs in your Kano neighbourhood, prompt payout, and respect for your craft. No registration fees.</p>
+            <p>Join FIX-PLUG. Get steady customer jobs in your Kano neighbourhood, prompt payout, and respect for your
+              craft. No registration fees.</p>
             <ul style="margin-left: 1.25rem; margin-bottom: var(--spacing-lg); line-height: 1.6;">
               <li>Steady local jobs in Kano</li>
               <li>Zero upfront fees or hidden cuts</li>
@@ -350,19 +409,33 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <img src="assets/logo-reversed.svg" alt="FIX-PLUG Logo" style="height: 38px; width: auto; margin-bottom: var(--spacing-md);">
+          <img src="assets/logo-reversed.svg" alt="FIX-PLUG Logo"
+            style="height: 38px; width: auto; margin-bottom: var(--spacing-md);">
           <p style="max-width: 340px;">
-            Verified tradespeople. Simple booking. Fair pay. Connecting Kano households with thoroughly vetted plumbers, electricians, and handymen.
+            Verified tradespeople. Simple booking. Fair pay. Connecting Kano households with thoroughly vetted plumbers,
+            electricians, and handymen.
           </p>
           <div class="footer-social-links">
-            <a href="https://www.linkedin.com/company/fixplug" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn">
-              <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8V10.9M7.86 6.32a1.63 1.63 0 0 0-1.63 1.62c0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.62-1.63-1.62z"/></svg>
+            <a href="https://www.linkedin.com/company/fixplug" target="_blank" rel="noopener noreferrer"
+              class="footer-social-icon" aria-label="LinkedIn">
+              <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8V10.9M7.86 6.32a1.63 1.63 0 0 0-1.63 1.62c0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.62-1.63-1.62z" />
+              </svg>
             </a>
-            <a href="https://x.com/fixplug" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="X (formerly Twitter)">
-              <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <a href="https://x.com/fixplug" target="_blank" rel="noopener noreferrer" class="footer-social-icon"
+              aria-label="X (formerly Twitter)">
+              <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
             </a>
-            <a href="https://instagram.com/fixplug" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">
-              <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://instagram.com/fixplug" target="_blank" rel="noopener noreferrer" class="footer-social-icon"
+              aria-label="Instagram">
+              <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -390,9 +463,13 @@
 
         <div class="footer-col">
           <h4>Contact Kano Team</h4>
-          <p style="margin-bottom: 0.5rem;">WhatsApp Business: Direct Support</p>
-          <p style="margin-bottom: 0.5rem;"><a href="mailto:hello@fixplug.ng">hello@fixplug.ng</a></p>
-          <p style="font-size: 0.85rem; color: #9CA3AF;">Operating in Kano, Nigeria (Nassarawa, Fagge, Tarauni, Dala, Gwale, Kano Municipal, Kumbotso, Ungogo).</p>
+          <p style="margin-bottom: 0.5rem;">WhatsApp Coordinator: <a href="https://wa.me/2348139277393" target="_blank"
+              rel="noopener noreferrer" style="color: var(--color-copper); font-weight: 700;">0813 927 7393</a></p>
+          <p style="margin-bottom: 0.5rem;">Email: <a href="mailto:fix-plug.ng@gmail.com">fix-plug.ng@gmail.com</a></p>
+          <p style="margin-bottom: 0.5rem;">Instagram: <a href="https://instagram.com/fixplug" target="_blank"
+              rel="noopener noreferrer">@fixplug</a></p>
+          <p style="font-size: 0.85rem; color: #9CA3AF;">We cover all areas in Kano (Nassarawa, Fagge, Tarauni, Dala,
+            Gwale, Kano Municipal, Kumbotso, Ungogo, and beyond).</p>
         </div>
       </div>
 
@@ -401,7 +478,8 @@
           &copy; <span id="currentYear">2026</span> FIX-PLUG. All rights reserved.
         </div>
         <div>
-          FIX-PLUG is currently completing formal corporate registration in Nigeria. Full legal entity and registration details will be published upon issuance.
+          FIX-PLUG is currently completing formal corporate registration in Nigeria. Full legal entity and registration
+          details will be published upon issuance.
         </div>
       </div>
     </div>
@@ -410,12 +488,17 @@
   <!-- Floating WhatsApp Action Button -->
   <a href="#" data-wa-type="customer" class="whatsapp-float" aria-label="Chat with FIX-PLUG on WhatsApp">
     <span class="whatsapp-pulse-dot"></span>
-    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+    </svg>
   </a>
 
   <!-- JavaScript -->
   <script src="js/i18n.js"></script>
+  <script src="js/supabase.js"></script>
   <script src="js/main.js"></script>
   <script src="js/forms.js"></script>
 </body>
+
 </html>

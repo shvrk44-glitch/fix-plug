@@ -8,6 +8,11 @@
   <link rel="canonical" href="https://fixplug.ng/about/">
   
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/FIX-PLUG_logo_badge.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FIX-PLUG">
+  <meta name="theme-color" content="#F3EBE0">
   
   <!-- High-Performance Non-Blocking Font Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +33,7 @@
       <div class="header-inner">
         <a href="../index.html" class="brand-link" aria-label="FIX-PLUG Homepage">
           <img src="../assets/FIX-PLUG_brand_emblem.png" alt="" class="brand-emblem-badge" width="40" height="40">
-          <img src="../assets/FIX-PLUG_logo_horizontal.png" alt="FIX-PLUG" class="brand-logo-img" width="210" height="60">
+          <img src="../assets/FIX-PLUG_logo_new.png" alt="FIX-PLUG" class="brand-logo-img">
         </a>
 
         <nav class="nav-desktop" role="navigation" aria-label="Main menu">
@@ -41,7 +46,13 @@
           </ul>
         </nav>
 
+        <!-- Header Actions: iOS 3-Lang Switcher & CTA -->
         <div class="header-actions">
+          <div class="ios-segmented-control lang-selector nav-desktop" role="group" aria-label="Select Language">
+            <button type="button" class="segment-btn active" data-lang="en">EN</button>
+            <button type="button" class="segment-btn" data-lang="ha">HA</button>
+            <button type="button" class="segment-btn" data-lang="pi">PI</button>
+          </div>
           <a href="../customers/index.html#request" class="btn btn-copper nav-desktop" style="padding: 0.45rem 1rem; font-size: 0.9rem;">
             Request a Pro
           </a>
@@ -55,6 +66,11 @@
     </div>
 
     <div id="mobileDrawer" class="mobile-drawer" role="navigation" aria-label="Mobile menu">
+      <div class="ios-segmented-control mobile-lang-selector" role="group" aria-label="Select Language">
+        <button type="button" class="segment-btn active" data-lang="en">English</button>
+        <button type="button" class="segment-btn" data-lang="ha">Hausa</button>
+        <button type="button" class="segment-btn" data-lang="pi">Pidgin</button>
+      </div>
       <ul class="mobile-nav-list">
         <li><a href="../customers/index.html" class="mobile-nav-link">For Customers</a></li>
         <li><a href="../artisans/index.html" class="mobile-nav-link">For Artisans</a></li>
@@ -186,7 +202,9 @@
         <div class="footer-col">
           <h4>Office Location</h4>
           <p>Kano, Nigeria</p>
-          <p>Email: <a href="mailto:hello@fixplug.ng">hello@fixplug.ng</a></p>
+          <p>Coordinator: <a href="https://wa.me/2348139277393" style="color: var(--color-copper); font-weight: 700;">0813 927 7393</a></p>
+          <p>Email: <a href="mailto:fix-plug.ng@gmail.com">fix-plug.ng@gmail.com</a></p>
+          <p style="font-size: 0.85rem; color: #9CA3AF; margin-top: 0.5rem;">We cover all areas in Kano.</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -202,6 +220,7 @@
   </a>
 
   <script src="../js/i18n.js"></script>
+  <script src="../js/supabase.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

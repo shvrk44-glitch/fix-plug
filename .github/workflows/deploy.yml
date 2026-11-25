@@ -2,7 +2,7 @@ name: FIX-PLUG CI & GitHub Pages Deployment
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -24,20 +24,25 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
-      - name: Run Quality & Security Tests
+      - name: Run Validation & Security Test Suite
         run: node test.js
 
-  deploy:
+  build-and-deploy:
+    needs: test
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: test
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
+
+      - name: Prepare Static Site Artifact
+        run: |
+          mkdir -p _site
+          cp -r index.html about artisans contact customers privacy trust assets css js robots.txt sitemap.xml _site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -45,8 +50,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: ./_site
 
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deploy
         uses: actions/deploy-pages@v4

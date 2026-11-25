@@ -8,6 +8,11 @@
   <link rel="canonical" href="https://fixplug.ng/privacy/">
   
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/FIX-PLUG_logo_badge.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FIX-PLUG">
+  <meta name="theme-color" content="#F3EBE0">
   
   <!-- High-Performance Non-Blocking Font Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +33,7 @@
       <div class="header-inner">
         <a href="../index.html" class="brand-link" aria-label="FIX-PLUG Homepage">
           <img src="../assets/FIX-PLUG_brand_emblem.png" alt="" class="brand-emblem-badge" width="40" height="40">
-          <img src="../assets/FIX-PLUG_logo_horizontal.png" alt="FIX-PLUG" class="brand-logo-img" width="210" height="60">
+          <img src="../assets/FIX-PLUG_logo_white.png" alt="FIX-PLUG" class="brand-logo-img">
         </a>
 
         <nav class="nav-desktop" role="navigation" aria-label="Main menu">
@@ -41,7 +46,13 @@
           </ul>
         </nav>
 
+        <!-- Header Actions: iOS 3-Lang Switcher & CTA -->
         <div class="header-actions">
+          <div class="ios-segmented-control lang-selector nav-desktop" role="group" aria-label="Select Language">
+            <button type="button" class="segment-btn active" data-lang="en">EN</button>
+            <button type="button" class="segment-btn" data-lang="ha">HA</button>
+            <button type="button" class="segment-btn" data-lang="pi">PI</button>
+          </div>
           <a href="../customers/index.html#request" class="btn btn-copper nav-desktop" style="padding: 0.45rem 1rem; font-size: 0.9rem;">
             Request a Pro
           </a>
@@ -55,6 +66,11 @@
     </div>
 
     <div id="mobileDrawer" class="mobile-drawer" role="navigation" aria-label="Mobile menu">
+      <div class="ios-segmented-control mobile-lang-selector" role="group" aria-label="Select Language">
+        <button type="button" class="segment-btn active" data-lang="en">English</button>
+        <button type="button" class="segment-btn" data-lang="ha">Hausa</button>
+        <button type="button" class="segment-btn" data-lang="pi">Pidgin</button>
+      </div>
       <ul class="mobile-nav-list">
         <li><a href="../customers/index.html" class="mobile-nav-link">For Customers</a></li>
         <li><a href="../artisans/index.html" class="mobile-nav-link">For Artisans</a></li>
@@ -77,68 +93,98 @@
         <h1>Privacy Notice &amp; Terms of Service</h1>
         <p class="secondary-text">Last updated: 20 November 2026 | Effective for FIX-PLUG Phase 1</p>
 
-        <div class="card" style="margin-top: var(--spacing-xl); padding: var(--spacing-2xl);">
-          <h2>1. Data Protection Notice (NDPA 2023)</h2>
+        <div class="card ios-card" style="margin-top: var(--spacing-xl); padding: var(--spacing-2xl);">
+          <h2>1. Data Protection &amp; Privacy Notice (NDPA 2023 Compliant)</h2>
           <p>
-            This notice explains in plain language how <strong>FIX-PLUG</strong> collects, uses, and safeguards personal data in accordance with the <strong>Nigeria Data Protection Act (NDPA) 2023</strong>.
+            This Privacy Notice is issued in full compliance with Section 27 of the <strong>Nigeria Data Protection Act (NDPA) 2023</strong> and the directives of the <strong>Nigeria Data Protection Commission (NDPC)</strong>. It explains how <strong>FIX-PLUG</strong> ("we", "our", or "the Platform") collects, processes, protects, and disposes of personal data across our tradesperson dispatch ecosystem in Kano State, Nigeria.
           </p>
 
-          <h3>A. What We Collect on This Website</h3>
-          <p>We believe in minimal data collection. We only ask for what is strictly necessary to arrange tradesperson services or review artisan applications:</p>
-          <ul style="margin-left: 1.25rem; line-height: 1.6; margin-bottom: var(--spacing-md);">
-            <li><strong>For Customers:</strong> Name, phone / WhatsApp number, neighbourhood area in Kano, service needed (plumbing, electrical, repairs), and a brief description of the issue.</li>
-            <li><strong>For Artisans:</strong> Name, phone number, trade skill, area of Kano, years of trade experience, and general certification status.</li>
+          <h3>A. Identity of the Data Controller</h3>
+          <p>
+            <strong>Data Controller:</strong> FIX-PLUG Marketplace Operations<br>
+            <strong>Location:</strong> Kano, Kano State, Nigeria<br>
+            <strong>Email Contact:</strong> <a href="mailto:fix-plug.ng@gmail.com">fix-plug.ng@gmail.com</a><br>
+            <strong>WhatsApp Coordinator:</strong> <a href="https://wa.me/2348139277393" target="_blank" rel="noopener noreferrer">+234 813 927 7393</a>
+          </p>
+
+          <h3>B. Categories of Personal Data Collected</h3>
+          <p>Under the principle of data minimization, FIX-PLUG collects only information strictly required to match customers with verified artisans:</p>
+          <ul class="ios-list-bullets" style="line-height: 1.6; margin-bottom: var(--spacing-md);">
+            <li><strong>Customer Data:</strong> Full name, active WhatsApp/phone number, neighbourhood/area in Kano (e.g. Nassarawa, Tarauni, Fagge), trade service requested, and problem description.</li>
+            <li><strong>Artisan Data:</strong> Full name, phone/WhatsApp number, primary trade discipline, operational LGA in Kano, trade experience duration, and certification status.</li>
           </ul>
 
-          <div class="banner-notice" style="margin-top: var(--spacing-sm); margin-bottom: var(--spacing-md);">
-            <strong>Strict Rule:</strong> FIX-PLUG does <em>not</em> collect National Identity Numbers (NIN), bank account details, or identity card uploads through this public website. All identity checks occur in person during our physical vetting process.
+          <div class="banner-notice" style="margin-top: var(--spacing-sm); margin-bottom: var(--spacing-md); border-radius: 12px;">
+            <strong>Mandatory Protection Protocol:</strong> FIX-PLUG does <em>not</em> collect National Identity Numbers (NIN), biometric fingerprints, or bank account credentials through this public web portal. All identity verification takes place in person during our physical vetting assessment in Kano.
           </div>
 
-          <h3>B. How We Use Your Data</h3>
-          <p>Your details are used solely to:</p>
-          <ul style="margin-left: 1.25rem; line-height: 1.6; margin-bottom: var(--spacing-md);">
-            <li>Contact you regarding your service request or artisan application.</li>
-            <li>Connect customers with verified tradespeople in Kano.</li>
-            <li>Maintain internal dispatch records. We never sell, rent, or trade your personal data to advertisers or third parties.</li>
+          <h3>C. Lawful Bases for Data Processing (Section 25 NDPA)</h3>
+          <p>Every processing operation conducted by FIX-PLUG is anchored on valid statutory grounds under the NDPA:</p>
+          <ul class="ios-list-bullets" style="line-height: 1.6; margin-bottom: var(--spacing-md);">
+            <li><strong>Consent:</strong> Freely given, specific, and unambiguous consent obtained via an explicit affirmative opt-in checkbox before submission.</li>
+            <li><strong>Performance of a Contract:</strong> Processing necessary to take preliminary steps at your request to dispatch a qualified local artisan to your location.</li>
+            <li><strong>Legitimate Interests:</strong> Ensuring job-site security, verifying trade competencies, preventing spam/fraud, and maintaining marketplace integrity.</li>
+            <li><strong>Legal Obligation:</strong> Compliance with Nigerian tax and statutory regulatory requests where mandated by law.</li>
           </ul>
 
-          <h3>C. Storage and Security</h3>
+          <h3>D. Data Sharing &amp; Third-Party Disclosures</h3>
           <p>
-            Submissions are stored in secured database storage accessible exclusively by authorized FIX-PLUG team members. We employ rate limiting and anti-spam measures (including honeypot traps) to protect our forms.
+            Customer job details (name, phone number, and neighborhood location) are shared <strong>exclusively with the specific verified tradesperson assigned to your job</strong> for the sole purpose of service fulfillment. 
+            <strong>We strictly never sell, rent, commercialize, or share personal data with external ad networks or brokers.</strong>
           </p>
 
-          <h3>D. Data Retention &amp; Your Rights</h3>
+          <h3>E. Data Storage, Cloud Infrastructure &amp; Security (Section 39 NDPA)</h3>
           <p>
-            Under the NDPA 2023, you have the right to request access to your data, correct inaccuracies, or request the complete deletion of your records from our systems. Customer service requests that do not proceed into active jobs are automatically purged after 90 days. To request deletion, email <a href="mailto:privacy@fixplug.ng">privacy@fixplug.ng</a>.
+            Records are stored in secured cloud infrastructure with encryption at rest and in transit (TLS 1.3). Our architecture enforces strict Row Level Security (RLS) policies. Anti-spam bot defenses (including server-side rate limits and honeypots) are deployed to protect form endpoints.
           </p>
+
+          <h3>F. Data Retention Schedule</h3>
+          <p>
+            In accordance with data storage limitation rules:
+          </p>
+          <ul class="ios-list-bullets" style="line-height: 1.6; margin-bottom: var(--spacing-md);">
+            <li>Customer booking leads that do not convert into an active job dispatch are automatically purged after <strong>90 days</strong>.</li>
+            <li>Completed job records are retained for statutory accounting and warranty dispute defense, after which they are securely deleted or pseudonymized.</li>
+          </ul>
+
+          <h3>G. Your Rights as a Data Subject (Part VI NDPA)</h3>
+          <p>Under the NDPA 2023, you hold the following fundamental rights:</p>
+          <ul class="ios-list-bullets" style="line-height: 1.6; margin-bottom: var(--spacing-md);">
+            <li><strong>Right of Access &amp; Rectification:</strong> Request a copy of your records or correct any inaccurate details.</li>
+            <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request the complete deletion of your data from our systems.</li>
+            <li><strong>Right to Restrict or Object:</strong> Restrict or object to further processing where applicable.</li>
+            <li><strong>Right to Withdraw Consent:</strong> Revoke processing consent at any time without retroactive penalty.</li>
+            <li><strong>Right to Lodge a Complaint:</strong> If you believe your data has been mishandled, you have the statutory right to lodge an inquiry or complaint with the <strong>Nigeria Data Protection Commission (NDPC)</strong> at <a href="https://ndpc.gov.ng" target="_blank" rel="noopener noreferrer">ndpc.gov.ng</a>.</li>
+          </ul>
+          <p>To exercise any of these rights, simply email our Privacy Desk at: <a href="mailto:fix-plug.ng@gmail.com" style="font-weight: 700; color: var(--color-copper);">fix-plug.ng@gmail.com</a>.</p>
 
           <hr style="margin: var(--spacing-2xl) 0; border: none; border-top: 1px solid rgba(129, 146, 162, 0.3);">
 
-          <h2 id="terms">2. Terms of Service (Phase 1)</h2>
+          <h2 id="terms">2. Terms of Service (Phase 1 Launch)</h2>
           
-          <h3>A. Service Status: Launch Phase in Kano</h3>
+          <h3>A. Service Status in Kano</h3>
           <p>
-            FIX-PLUG is currently in its initial launch phase in Kano, Nigeria. During this phase, submissions join a curated dispatch priority list. Submitting a request does not constitute an instant contract or automatic guarantee of immediate artisan dispatch.
+            FIX-PLUG operates an on-demand marketplace coordinating trade skills in Kano State. During our initial Phase 1 rollout, bookings enter our prioritized dispatch queue. Submitting a request initiates a booking dispatch review and does not constitute an unconditional guarantee of artisan availability.
           </p>
 
-          <h3>B. Pricing and Quotations</h3>
+          <h3>B. Pricing, Estimates &amp; Material Receipts</h3>
           <p>
-            Any preliminary price indications are estimates. Final labor charges and material requirements are agreed directly between the customer and the artisan on-site after physical inspection, prior to work commencement.
+            All preliminary price indications provided over phone or messaging are estimates. Final labor charges and required replacement materials are agreed directly on-site between customer and artisan after physical inspection before work commences. Customers pay verified store receipts for replacement materials.
           </p>
 
-          <h3>C. Content Accuracy</h3>
+          <h3>C. Professional Standards &amp; Respect</h3>
           <p>
-            FIX-PLUG upholds the highest truth-in-advertising standards. We do not publish simulated job counts, unverified ratings, or stock imagery presented as our verified workers.
+            Both customers and artisans are expected to maintain professional and respectful conduct on every job. Vanishing artisans, unsafe work practices, or unfair price gouging result in immediate suspension from the FIX-PLUG network.
           </p>
 
           <h3>D. Corporate Registration Notice</h3>
           <p>
-            FIX-PLUG is completing its corporate registration filings in Nigeria. Legal name details and Corporate Affairs Commission (CAC) registration numbers will appear in the site footer upon formal confirmation.
+            FIX-PLUG is completing its corporate registration filings in Nigeria. Legal entity details and Corporate Affairs Commission (CAC) numbers will appear in the platform footer upon official issuance.
           </p>
 
           <h3>E. Contact for Legal Inquiries</h3>
           <p style="margin-bottom: 0;">
-            For legal or regulatory questions regarding data protection or platform terms, please write to: <a href="mailto:hello@fixplug.ng">hello@fixplug.ng</a>.
+            For all legal or regulatory inquiries, contact: <a href="mailto:fix-plug.ng@gmail.com" style="font-weight: 700; color: var(--color-copper);">fix-plug.ng@gmail.com</a>.
           </p>
         </div>
       </div>
@@ -168,13 +214,13 @@
           <ul class="footer-nav-list">
             <li><a href="#terms">Terms of Service</a></li>
             <li><a href="../trust/index.html">Vetting Standard</a></li>
-            <li><a href="mailto:privacy@fixplug.ng">Data Protection Officer</a></li>
+            <li><a href="mailto:fix-plug.ng@gmail.com">Data Protection Officer</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Support</h4>
           <p>Operating in Kano, Nigeria</p>
-          <a href="mailto:hello@fixplug.ng" style="color: var(--color-copper);">hello@fixplug.ng</a>
+          <a href="mailto:fix-plug.ng@gmail.com" style="color: var(--color-copper);">fix-plug.ng@gmail.com</a>
         </div>
       </div>
       <div class="footer-bottom">

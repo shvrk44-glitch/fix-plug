@@ -496,3 +496,196 @@ textarea {
   background-color: var(--color-copper);
   border: 2px solid #FFFFFF;
 }
+
+/* ==========================================================================
+   iOS Human Interface Guidelines (HIG) Components & Controls
+   Maintains brand colors: Near-Black (#0A0A0A), Slate (#8192A2), Copper (#B6855A), Cream (#F3EBE0)
+   ========================================================================== */
+
+/* 1. iOS Segmented Control (Language switcher & Category tabs) */
+.ios-segmented-control {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(129, 146, 162, 0.22);
+  padding: 3px;
+  border-radius: 12px;
+  gap: 2px;
+  user-select: none;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.08);
+}
+
+.ios-segmented-control .segment-btn {
+  background: transparent;
+  border: none;
+  color: #333333;
+  font-family: var(--font-family);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.16s var(--ios-ease);
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.ios-segmented-control .segment-btn:hover {
+  color: var(--color-near-black);
+}
+
+.ios-segmented-control .segment-btn.active {
+  background-color: #FFFFFF;
+  color: var(--color-near-black);
+  box-shadow: 0 2px 6px rgba(10, 10, 10, 0.14);
+}
+
+.mobile-lang-selector {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.mobile-lang-selector .segment-btn {
+  flex: 1;
+}
+
+/* 2. iOS Grouped Inset Cards */
+.ios-card {
+  border-radius: 18px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(129, 146, 162, 0.24);
+  box-shadow: 0 4px 18px rgba(10, 10, 10, 0.04);
+  transition: transform 0.18s var(--ios-ease), box-shadow 0.18s var(--ios-ease);
+}
+
+.ios-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(10, 10, 10, 0.08);
+}
+
+/* 3. iOS Style List Bullets */
+.ios-list-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0 !important;
+}
+
+.ios-list-bullets li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.85rem;
+}
+
+.ios-list-bullets li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: rgba(182, 133, 90, 0.2);
+  color: var(--color-copper);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+/* 4. iOS Safe-Area Padding & Unmistakable Apple HIG Polish */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* iOS Grouped Inset Surfaces */
+.card,
+.step-card,
+.form-container,
+.faq-item {
+  border-radius: 20px !important;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(10, 10, 10, 0.08);
+  box-shadow: 0 8px 28px rgba(10, 10, 10, 0.05), 0 1px 3px rgba(10, 10, 10, 0.04);
+}
+
+/* iOS Cupertino Buttons */
+.btn {
+  border-radius: 14px !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  min-height: 48px;
+  transition: transform 0.14s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-copper {
+  box-shadow: 0 4px 14px rgba(182, 133, 90, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btn-whatsapp {
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* iOS Pill Badges */
+.badge {
+  border-radius: 9999px !important;
+  padding: 0.35rem 0.9rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+
+/* iOS Inset Form Inputs */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  border-radius: 14px !important;
+  background-color: #FFFFFF !important;
+  border: 1.5px solid rgba(129, 146, 162, 0.32) !important;
+  min-height: 48px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-copper) !important;
+  box-shadow: 0 0 0 4px rgba(182, 133, 90, 0.18) !important;
+  outline: none;
+}
+
+/* iOS App-Icon Style Brand Emblem */
+.brand-emblem-badge {
+  border-radius: 11px !important;
+  box-shadow: 0 3px 10px rgba(10, 10, 10, 0.14) !important;
+  border: 0.5px solid rgba(10, 10, 10, 0.08);
+}
+
+/* iOS Frosted Header */
+.site-header {
+  background-color: rgba(243, 235, 224, 0.82) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border-bottom: 0.5px solid rgba(10, 10, 10, 0.1) !important;
+}
+
+/* iOS Mobile Drawer Sheet */
+.mobile-drawer {
+  background-color: rgba(243, 235, 224, 0.96) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  box-shadow: 0 16px 40px rgba(10, 10, 10, 0.14);
+}

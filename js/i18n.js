@@ -1,6 +1,6 @@
 /**
  * FIX-PLUG Internationalization (i18n) Dictionary
- * English (Default) & Hausa for Kano audience
+ * Languages: English (en), Hausa (ha), Nigerian Pidgin (pi)
  */
 
 const FIX_PLUG_I18N = {
@@ -16,7 +16,7 @@ const FIX_PLUG_I18N = {
     promise_2_title: "Transparent & Fair",
     promise_2_desc: "Clear job estimates upfront. Fair pay for the artisan, honest value for the customer. Zero hidden charges.",
     promise_3_title: "Reliable & Local",
-    promise_3_desc: "Tradespeople based across Kano—Nassarawa, Fagge, Tarauni, Dala, and beyond. They turn up when promised.",
+    promise_3_desc: "We cover all areas in Kano—Nassarawa, Fagge, Tarauni, Dala, Gwale, Kano Municipal, and beyond. They turn up when promised.",
     step_1: "Tell us what you need",
     step_1_desc: "Submit your request in 30 seconds via WhatsApp or our simple form. Describe the issue.",
     step_2: "We assign a verified pro",
@@ -38,7 +38,7 @@ const FIX_PLUG_I18N = {
     promise_2_title: "A Bayyane ba boye-boye",
     promise_2_desc: "Farashi a bayyane tun farko. Hakkin mai aiki a bayyane, gaskiya ga mai gida. Babu boyayyun kudi.",
     promise_3_title: "Abin Dogaro a Kano",
-    promise_3_desc: "Kwararru a kowane yanki a Kano—Nassarawa, Fagge, Tarauni, Dala, da sauransu. Suna zuwa a kan lokaci.",
+    promise_3_desc: "Muna aiki a dukkan yankunan Kano—Nassarawa, Fagge, Tarauni, Dala, Gwale, da kewaye. Suna zuwa a kan lokaci.",
     step_1: "Fada mana abin da kake bukata",
     step_1_desc: "Aika bukatarka cikin dakika 30 ta WhatsApp ko fom dinmu mai sauki.",
     step_2: "Zamu hada ka da gwanin da aka tantance",
@@ -47,7 +47,34 @@ const FIX_PLUG_I18N = {
     step_3_desc: "Mai aiki zai duba matsalar ya baka ingantaccen farashi a bayyane kafin a fara aiki.",
     step_4: "Aiki ya kammala cikin aminci",
     step_4_desc: "Zaka duba aiki ka biya kudin da aka dace. Idan akwai matsala, muna tare da kai."
+  },
+  pi: {
+    tagline: "Verified artisan people. Easy booking. Correct pay.",
+    subtagline: "Verified plumber, electrician, handyman, and cleaner for Kano. No guessing, no overcharging, no artisan go disappear with your money.",
+    btn_request: "Request artisan now",
+    btn_join: "Register as artisan",
+    btn_whatsapp: "Chat on WhatsApp",
+    badge_kano: "Dey launch for Kano",
+    promise_1_title: "100% Face-to-Face Vetting",
+    promise_1_desc: "We check government ID, practical skill test, and confirm real home guarantors before any artisan fit get work.",
+    promise_2_title: "Clean & Fair Price",
+    promise_2_desc: "Clear upfront job estimate. Correct pay for artisan, honest value for customer. Zero hidden charges or surprise addition.",
+    promise_3_title: "Trustworthy Kano Artisans",
+    promise_3_desc: "We cover all areas for Kano—Nassarawa, Fagge, Tarauni, Dala, Gwale, Municipal, and everywhere. Dem dey turn up sharp sharp.",
+    step_1: "Tell us wetin spoil",
+    step_1_desc: "Send your request within 30 seconds on WhatsApp or our simple form. Tell us wetin happen.",
+    step_2: "We assign a verified pro",
+    step_2_desc: "We connect you sharp sharp with a vetted artisan specialized in that exact trade.",
+    step_3: "Clear inspection & quote",
+    step_3_desc: "The pro go arrive, inspect the job, and give you honest, transparent price before starting.",
+    step_4: "Job done well-well",
+    step_4_desc: "You inspect the finished job and pay fair value. If anything no clear, FIX-PLUG team dey with you."
   }
 };
 
-window.FIX_PLUG_I18N = FIX_PLUG_I18N;
+if (typeof window !== "undefined") {
+  window.FIX_PLUG_I18N = FIX_PLUG_I18N;
+}
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = FIX_PLUG_I18N;
+}

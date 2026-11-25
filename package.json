@@ -5,8 +5,15 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js",
-    "test": "node test.js"
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node test.js",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0"
   },
   "keywords": [
     "fix-plug",

@@ -8,6 +8,11 @@
   <link rel="canonical" href="https://fixplug.ng/customers/">
   
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/FIX-PLUG_logo_badge.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FIX-PLUG">
+  <meta name="theme-color" content="#F3EBE0">
   
   <!-- High-Performance Non-Blocking Font Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +34,7 @@
       <div class="header-inner">
         <a href="../index.html" class="brand-link" aria-label="FIX-PLUG Homepage">
           <img src="../assets/FIX-PLUG_brand_emblem.png" alt="" class="brand-emblem-badge" width="40" height="40">
-          <img src="../assets/FIX-PLUG_logo_horizontal.png" alt="FIX-PLUG" class="brand-logo-img" width="210" height="60">
+          <img src="../assets/FIX-PLUG_logo_white.png" alt="FIX-PLUG" class="brand-logo-img">
         </a>
 
         <nav class="nav-desktop" role="navigation" aria-label="Main menu">
@@ -42,7 +47,13 @@
           </ul>
         </nav>
 
+        <!-- Header Actions: iOS 3-Lang Switcher & CTA -->
         <div class="header-actions">
+          <div class="ios-segmented-control lang-selector nav-desktop" role="group" aria-label="Select Language">
+            <button type="button" class="segment-btn active" data-lang="en">EN</button>
+            <button type="button" class="segment-btn" data-lang="ha">HA</button>
+            <button type="button" class="segment-btn" data-lang="pi">PI</button>
+          </div>
           <a href="#request" class="btn btn-copper nav-desktop" style="padding: 0.45rem 1rem; font-size: 0.9rem;">
             Request a Pro
           </a>
@@ -57,6 +68,11 @@
 
     <!-- Mobile Drawer -->
     <div id="mobileDrawer" class="mobile-drawer" role="navigation" aria-label="Mobile menu">
+      <div class="ios-segmented-control mobile-lang-selector" role="group" aria-label="Select Language">
+        <button type="button" class="segment-btn active" data-lang="en">English</button>
+        <button type="button" class="segment-btn" data-lang="ha">Hausa</button>
+        <button type="button" class="segment-btn" data-lang="pi">Pidgin</button>
+      </div>
       <ul class="mobile-nav-list">
         <li><a href="index.html" class="mobile-nav-link active">For Customers</a></li>
         <li><a href="../artisans/index.html" class="mobile-nav-link">For Artisans</a></li>
@@ -262,7 +278,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              We currently cover major residential and commercial areas across Kano including Nassarawa (GRA, Bompai), Tarauni (Farm Centre, Gyadi-Gyadi), Fagge (Sabon Gari), Kano Municipal, Gwale (Kabuga), Dala, Kumbotso, and Ungogo.
+              We cover all areas in Kano! Our verified tradespeople serve all residential, commercial, and developing zones across Kano including Nassarawa (GRA, Bompai), Tarauni (Farm Centre, Gyadi-Gyadi), Fagge (Sabon Gari), Kano Municipal, Gwale (Kabuga), Dala, Kumbotso, Ungogo, and all surrounding areas.
             </div>
           </div>
         </div>
@@ -319,6 +335,7 @@
   </a>
 
   <script src="../js/i18n.js"></script>
+  <script src="../js/supabase.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/forms.js"></script>
 </body>
