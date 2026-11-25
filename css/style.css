@@ -188,32 +188,45 @@ a:hover {
 .brand-link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   min-height: var(--min-tap);
-  transition: transform 0.12s ease;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+}
+
+.brand-link:hover {
+  transform: scale(1.03);
 }
 
 .brand-link:active {
-  transform: scale(0.96);
+  transform: scale(0.95);
+  opacity: 0.88;
 }
 
-.brand-emblem-badge {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+.brand-logo {
+  width: 44px;
+  height: 44px;
   display: block;
   flex-shrink: 0;
   object-fit: contain;
-  box-shadow: 0 2px 8px rgba(10, 10, 10, 0.18);
+  filter: drop-shadow(0 2px 6px rgba(10, 10, 10, 0.12));
 }
 
-.brand-logo-img {
-  max-width: 100%;
-  height: 40px;
-  width: auto;
+.hero-brand-logo {
+  width: 72px;
+  height: 72px;
   display: block;
+  margin: 0 auto 14px;
   object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(10, 10, 10, 0.14));
+}
+
+.footer-brand-logo {
+  width: 52px;
+  height: 52px;
+  display: block;
+  margin-bottom: var(--spacing-md);
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
 }
 
 .nav-desktop {
