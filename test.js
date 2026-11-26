@@ -14,6 +14,7 @@ const REQUIRED_FILES = [
   'about/index.html',
   'contact/index.html',
   'privacy/index.html',
+  'terms/index.html',
   'css/style.css',
   'css/components.css',
   'js/main.js',

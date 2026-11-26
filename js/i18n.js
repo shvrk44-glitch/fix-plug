@@ -5,16 +5,16 @@
 
 const FIX_PLUG_I18N = {
   en: {
-    tagline: "Verified tradespeople. Simple booking. Fair pay.",
-    subtagline: "Verified plumbers, electricians, handymen, and home cleaners in Kano. No guesswork, no overpriced quotes, no vanished artisans.",
+    tagline: "Vetted tradespeople. Simple booking. Fair pay.",
+    subtagline: "Electrical, plumbing, and handyman support in Kano. We are actively onboarding & vetting tradespeople while taking priority booking requests today.",
     btn_request: "Request a tradesperson",
     btn_join: "Join as an artisan",
     btn_whatsapp: "Message on WhatsApp",
-    badge_kano: "Launching in Kano",
-    promise_1_title: "100% Verified in Person",
-    promise_1_desc: "We check government ID, practical skill tests, and home guarantors before any artisan gets a job.",
+    badge_kano: "Early Access in Kano",
+    promise_1_title: "In-Person Vetting Standard",
+    promise_1_desc: "Every artisan must pass government ID checks, practical skill tests, and Kano guarantor verification before being approved for dispatch.",
     promise_2_title: "Transparent & Fair",
-    promise_2_desc: "Clear job estimates upfront. Fair pay for the artisan, honest value for the customer. Zero hidden charges.",
+    promise_2_desc: "Upfront quotes agreed before work starts. Fair pay for the artisan, honest value for the customer, with no surprise add-ons.",
     promise_3_title: "Reliable & Local",
     promise_3_desc: "We cover all areas in Kano—Nassarawa, Fagge, Tarauni, Dala, Gwale, Kano Municipal, and beyond. They turn up when promised.",
     step_1: "Tell us what you need",
@@ -24,7 +24,7 @@ const FIX_PLUG_I18N = {
     step_3: "Clear quote & inspection",
     step_3_desc: "The pro arrives, checks the work, and gives you a fair, transparent price before starting.",
     step_4: "Job done right",
-    step_4_desc: "You inspect the completed work and pay fair value. If something is not right, we step in."
+    step_4_desc: "You inspect the completed work and pay fair value. If an issue arises, our coordinator team reviews and helps mediate a resolution."
   },
   ha: {
     tagline: "Kwararrun ma'aikatan hannu da aka tantance. Saukin nema. Halaltaccen biya.",
@@ -50,15 +50,15 @@ const FIX_PLUG_I18N = {
   },
   pi: {
     tagline: "Verified artisan people. Easy booking. Correct pay.",
-    subtagline: "Verified plumber, electrician, handyman, and cleaner for Kano. No guessing, no overcharging, no artisan go disappear with your money.",
+    subtagline: "Verified plumber, electrician, and handyman support for Kano. We dey onboard and vet artisans right now while we dey take priority booking requests today.",
     btn_request: "Request artisan now",
     btn_join: "Register as artisan",
     btn_whatsapp: "Chat on WhatsApp",
-    badge_kano: "Dey launch for Kano",
-    promise_1_title: "100% Face-to-Face Vetting",
-    promise_1_desc: "We check government ID, practical skill test, and confirm real home guarantors before any artisan fit get work.",
+    badge_kano: "Early Access for Kano",
+    promise_1_title: "Face-to-Face Vetting Standard",
+    promise_1_desc: "Every artisan must pass government ID check, practical skill test, and Kano guarantor verification before dem go fit get dispatch.",
     promise_2_title: "Clean & Fair Price",
-    promise_2_desc: "Clear upfront job estimate. Correct pay for artisan, honest value for customer. Zero hidden charges or surprise addition.",
+    promise_2_desc: "Clear upfront quote agreed before work start. Correct pay for artisan, honest value for customer, no surprise addition.",
     promise_3_title: "Trustworthy Kano Artisans",
     promise_3_desc: "We cover all areas for Kano—Nassarawa, Fagge, Tarauni, Dala, Gwale, Municipal, and everywhere. Dem dey turn up sharp sharp.",
     step_1: "Tell us wetin spoil",

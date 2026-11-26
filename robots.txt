@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fixplug.ng/sitemap.xml
+Sitemap: https://shvrk44-glitch.github.io/fix-plug/sitemap.xml

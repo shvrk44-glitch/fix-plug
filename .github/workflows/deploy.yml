@@ -42,7 +42,7 @@ jobs:
       - name: Prepare Static Site Artifact
         run: |
           mkdir -p _site
-          cp -r index.html about artisans contact customers privacy trust assets css js robots.txt sitemap.xml _site/
+          cp -r index.html about artisans contact customers privacy terms trust assets css js robots.txt sitemap.xml _site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
