@@ -78,22 +78,18 @@ Open your browser to: **`http://localhost:3000`**
 
 ## 5. Deployment Options (Zero Cost, 100% Free SSL)
 
-This site requires no compilation or build tools. It deploys directly to any static CDN host:
+This site requires no compilation or build tools. Deploy it directly from the repository using either Netlify or GitHub Pages.
 
-### Option A: Cloudflare Pages (Recommended)
-1. Log into your Cloudflare dashboard.
-2. Go to **Pages** > **Create a project**.
-3. Connect your GitHub repository (or direct upload the `fix-plug` folder).
-4. Set build command to `None` and output directory to `/`.
-5. Point your custom domain (e.g., `fixplug.ng`).
+### Option A: Netlify (Recommended)
+1. Sign in to [Netlify](https://app.netlify.com/) and create a new site by importing this GitHub repository.
+2. Set the build command to `None` and the publish directory to `.` (the repository root).
+3. Deploy the site. To use a custom domain, add it in the site's **Domain management** settings and configure the DNS records as Netlify specifies.
 
-### Option B: Netlify
-1. Drag and drop the `fix-plug` folder into the Netlify Sites dashboard, or link to GitHub.
-2. Publish directory: `.` (root).
-
-### Option C: Vercel
-1. Run `npx vercel` inside `fix-plug` or import the Git repository.
-2. Select "Other" framework preset with root directory `.`.
+### Option B: GitHub Pages
+1. In the repository, open **Settings** > **Pages**.
+2. Under **Build and deployment**, select **Deploy from a branch**, then choose the `main` branch and `/ (root)` folder; click **Save**.
+3. Wait for the deployment to finish. The site will be available at `https://shvrk44-glitch.github.io/fix-plug/`.
+4. For a custom domain, enter it in the **Custom domain** field in Pages settings and configure the DNS records at your domain provider according to GitHub's instructions.
 
 ---
 
